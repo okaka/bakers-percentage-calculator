@@ -1,6 +1,6 @@
 <ons-page>
   <ons-toolbar>
-    <div class="center"><!-- ツールバータイトル -->Welcome to {{ title }}!</div>
+    <div class="center"><!-- ツールバータイトル -->{{ title }}</div>
   </ons-toolbar>
   <div class="background"></div><!-- ページの背景 -->
   <div class="content">
@@ -8,7 +8,16 @@
     <h1>
       Welcome to {{ title }}!
     </h1>
-    <ons-button>Click Me</ons-button>
+    <ons-button (click)="alert()">Click Me</ons-button>
+    <p>input the amount of flour in your kitchen!</p>
+    <ons-input type="text" [(value)]="val"></ons-input>
+    <p>Required amount of ingredients for your {{val}} g of flour are:</p>
+    <dl>
+      <dt>water: </dt>
+      <dt>solt: </dt>
+      <dt>yeast: </dt>
+      <dt>sugar: </dt>
+    </dl>
     <p><a href="https://ja.onsen.io/v2/guide/angular2/" target="_blank">QuickStart</a></p>
   </div>
 </ons-page>
