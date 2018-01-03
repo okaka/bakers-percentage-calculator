@@ -5,19 +5,16 @@
   <div class="background"></div><!-- ページの背景 -->
   <div class="content">
     <!-- ページの内容 -->
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
-    <ons-button (click)="alert()">Click Me</ons-button>
+    <!-- <ons-button (click)="alert()">Click Me</ons-button> -->
     <p>input the amount of flour in your kitchen!</p>
-    <ons-input type="text" [(value)]="val"></ons-input>
-    <p>Required amount of ingredients for your {{val}} g of flour are:</p>
+    <ons-input placeholder="Type here" [(value)]="target"></ons-input> g
+    <p>Required amount of ingredients for your {{target}} g of flour are:</p>
     <dl>
-      <dt>water: </dt>
-      <dt>solt: </dt>
-      <dt>yeast: </dt>
-      <dt>sugar: </dt>
+      <dt>water: {{target * 0.66}} g</dt>
+      <dt>solt: {{target * 0.02}} g</dt>
+      <dt>yeast: {{target * 0.012}} g</dt>
+      <dt>sugar:{{target * 0.06}} g</dt>
     </dl>
-    <p><a href="https://ja.onsen.io/v2/guide/angular2/" target="_blank">QuickStart</a></p>
+    <!-- <p><a href="https://ja.onsen.io/v2/guide/angular2/" target="_blank">QuickStart</a></p> -->
   </div>
 </ons-page>

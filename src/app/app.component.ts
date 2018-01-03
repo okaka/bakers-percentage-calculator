@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as ons from 'onsenui';
+// import * as ons from 'onsenui';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,8 @@ import * as ons from 'onsenui';
 })
 export class AppComponent {
   title = 'Baker’s Percentage Calculator';
-  alert() {
-    ons.notification.alert('Hello, world!');
-  }
+  target: number = 0;
+  // alert() {
+  //   ons.notification.alert('Hello, world!');
+  // }
 }
