@@ -1,4 +1,4 @@
-# Baker's Percentage Calutulator
+# Baker's Percentage Calculator
 
 [DEMO](https://bakers-percentage-calculator.herokuapp.com/)
 
