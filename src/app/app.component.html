@@ -6,15 +6,42 @@
   <div class="content">
     <!-- ページの内容 -->
     <!-- <ons-button (click)="alert()">Click Me</ons-button> -->
-    <p>input the amount of flour in your kitchen!</p>
-    <ons-input placeholder="Type here" [(value)]="target"></ons-input> g
-    <p>Required amount of ingredients for your {{target}} g of flour are:</p>
-    <dl>
-      <dt>water: {{target * 0.66}} g</dt>
-      <dt>solt: {{target * 0.02}} g</dt>
-      <dt>yeast: {{target * 0.012}} g</dt>
-      <dt>sugar:{{target * 0.06}} g</dt>
-    </dl>
-    <!-- <p><a href="https://ja.onsen.io/v2/guide/angular2/" target="_blank">QuickStart</a></p> -->
+    <h1>Baker’s Percentage Calculator</h1>
+
+    <div class="contents_box">
+      <div class="flour">
+        <p>You have</p>
+        <ons-input placeholder="" [(value)]="target"></ons-input> g
+        <p>of flour in your kitchen!</p>
+      </div>
+
+      <p class="then">Then, required amount of ingredients for your {{target}} g of flour are:</p>
+      <div class="result">
+        <dl>
+          <dt class="water">
+            <span class="ammound_label">water:</span>
+            <span class="ammount_num">{{target * 0.66 | number:'1.0-1'}}</span>
+            <span class="ammount_gram">g</span>
+          </dt>
+          <dt class="salt">
+            <span class="ammound_label">salt:</span>
+            <span class="ammount_num">{{target * 0.02 | number:'1.0-1'}}</span>
+            <span class="ammount_gram">g</span>
+          </dt>
+          <dt class="sugar">
+            <span class="ammound_label">sugar:</span>
+            <span class="ammount_num">{{target * 0.06 | number:'1.0-1'}}</span>
+            <span class="ammount_gram">g</span>
+          </dt>
+          <dt class="yeast">
+            <span class="ammound_label">yeast:</span>
+            <span class="ammount_num">{{target * 0.012 | number:'1.0-1'}}</span>
+            <span class="ammount_gram">g</span>
+          </dt>
+        </dl>
+      </div>
+
+    </div>
+
   </div>
 </ons-page>

@@ -1,1 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  color: #fff;
+  font-family: HelveticaNeue;
+  background-image: url(img/bg.png);
+  background-position: -100px 170px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 480px) {
+  body {
+    background-size: 150% auto;
+  }
+}
+
+h1 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-top: 120px;
+  background-image: url(img/bread.png),linear-gradient(-180deg, #FFCA33 0%, #FFA31B 100%);
+  background-position: top 30px center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 84px, auto;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.07);
+  font-weight: normal;
+  height: 210px;
+  font-size: 29px;
+  letter-spacing: 0.17px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.contents_box {
+  font-size: 23px;
+  margin: 20px auto;
+  text-align: center;
+  width: 297px;
+}
+
+.flour {
+
+  text-align: center;
+}
+.flour > p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.flour > p:last-child {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.text-input {
+  width: 216px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.then {
+  opacity: 0.61;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.result {
+  background: rgba(72, 48, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px 28px 10px;
+}
+.result dl {
+  margin: 0;
+  text-align: left;
+}
+.result dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: auto;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 22px auto;
+  /* margin-bottom: 8px; */
+}
+.result dt > span {
+
+
+
+}
+/* .result dt:first-child {
+  margin-top: 0;
+} */
+.result dt .ammount_num {
+  font-size: 36px;
+}
+.water {
+  background-image: url(img/water.png);
+}
+.salt {
+  background-image: url(img/salt.png);
+}
+.sugar {
+  background-image: url(img/sugar.png);
+}
+.yeast {
+  background-image: url(img/yeast.png);
+}
+.result dt .ammound_label {
+  width: 3em;
+}
+.result dt .ammount-num {
+}
+.result dt .ammount_gram {
+  width: 1em;
+  margin-left: 5px;
+}
