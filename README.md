@@ -1,6 +1,6 @@
 # Baker's Percentage Calutulator
 
-[DEMO]()
+[DEMO](https://bakers-percentage-calculator.herokuapp.com/)
 
 ベーカーズ・パーセントを利用してパン作りの材料の必要量を求めるサンプルアプリです。  
 あくまでサンプルのため、使用している数値は大雑把なものです。実際のパン作りには使用しないでください。
